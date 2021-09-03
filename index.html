@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  	<link rel="stylesheet" href="style.css">
+      <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+
+
+    <title>Quiz App</title>
+</head>
+
+<body>
+
+
+    <!--Start Button-->
+    <div class="start_btn">
+        <button>Start Quiz</button>
+    </div>
+
+    <!--Exam Instructions-->
+    <div class="info_box">
+        <div class="info_title">
+            <span>Examination Instructions</span>
+        </div>
+
+        <div class="info_list">
+            <div class="info">1. You will have only 15 seconds to answer each question</div>
+            <div class="info">2. You can only attempt each question once after clicking your answer</div>
+            <div class="info">3. You should not close the examination once you start or you will start all over</div>
+            <div class="info">4. Each correct answer earns you a point</div>
+
+            <div class="buttons">
+                <button class="quit">Quit Exam</button>
+                <button class="restart">Start Exam</button>
+            </div>
+        </div>
+    </div>
+
+    <!--Examination Box-->
+    <div class="quiz_box">
+        <header>
+            <div class="title">Psychometrics Examination App</div>
+            <div class="timer">
+                <div class="time_text">Time Left</div>
+                <div class="timer_sec">15</div>
+            </div>
+        </header>
+        <!-- <div class="time_line"></div> -->
+      
+        <section>
+            <div class="que_text">
+                <!-- <span>Which of the following best explains psychometrics?</span> -->
+            </div>
+            <div class="option_list">
+                <!-- <div class="option">
+                    <span>Psychometrics is measurement of success</span>
+                    <div class="icon tick">
+                        <i class="fas fa-check"></i>
+                    </div>
+                </div>
+
+                <div class="option">
+                    <span>Psychometrics is measurement of behaviour</span>
+                    <div class="icon cross">
+                        <i class="fas fa-times"></i>
+                    </div>
+                </div>
+
+                <div class="option">
+                    <span>None of the options</span>
+                </div> -->
+            </div>
+        </section>
+
+        <div class="answer_feedback">
+            <p></p>
+        </div>
+
+        <!--Examination Box Footer-->
+        <footer>
+            <div class="total_que">
+                <!-- <span><p>3</p><p>of</p><p>5</p><p>Questions</p></span> -->
+            </div>
+            <button class="next_btn">Next Question</button>
+        </footer>
+    </div>
+
+    <!--Result Box-->
+    <div class="result_box">
+        <div class="icon">
+            <i class="fas fa-crown"></i>
+        </div>
+        <div class="complete_text">Exam completed</div>
+        <div class="score_text">
+            <!-- <span><p>You got only 2 out of <p> 5 Questions</p></span> -->
+        </div>
+        <div class="buttons">
+            <button class="restart">Restart</button>
+            <button class="quit">Quit</button>
+        </div>
+    </div>
+    
+</body>
+
+	<script src="script.js"></script>
+    <script src="questions.js"></script>
+
+</html>
